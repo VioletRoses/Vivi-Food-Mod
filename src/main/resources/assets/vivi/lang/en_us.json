@@ -13,6 +13,8 @@
   "item.vivi.corn": "Corn",
   "block.vivi.corn_crop": "Corn Seeds",
   "block.vivi.salt_ore": "Salt Ore",
-  "item.vivi.salt": "Salt"
+  "item.vivi.salt": "Salt",
+  "item.vivi.raw_bacon": "Raw Bacon",
+  "item.vivi.cooked_bacon": "Cooked Bacon"
 }
 

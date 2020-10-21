@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_porkchop"
+    },
+    {
+      "item": "vivi:salt"
+    }
+  ],
+  "result": {
+    "item": "vivi:raw_bacon",
+    "count": 1
+  }
+}
+
