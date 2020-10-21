@@ -1,4 +1,4 @@
-package net.vivi;
+package net.vivi.tool;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;

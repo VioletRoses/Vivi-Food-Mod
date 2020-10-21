@@ -1,4 +1,4 @@
-package net.vivi;
+package net.vivi.tool.material;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;

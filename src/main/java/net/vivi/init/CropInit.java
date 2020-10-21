@@ -44,7 +44,7 @@ public class CropInit {
         Registry.register(Registry.BLOCK, new Identifier("vivi", "strawberry_crop"), STRAWBERRY_CROP);
         Registry.register(Registry.ITEM, new Identifier("vivi", "strawberry_seed"), new BlockItem(STRAWBERRY_CROP, new Item.Settings().group(ItemGroup.FOOD)));
 
-        //Misc.
+        //Miscellaneous
         Registry.register(Registry.ITEM, new Identifier("vivi", "pickle"), PICKLE);
 
     }

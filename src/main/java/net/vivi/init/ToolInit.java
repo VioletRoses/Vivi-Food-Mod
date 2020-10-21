@@ -5,8 +5,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.vivi.CactusSword;
-import net.vivi.CactusToolMaterial;
+import net.vivi.tool.CactusSword;
+import net.vivi.tool.material.CactusToolMaterial;
 
 public class ToolInit {
 
