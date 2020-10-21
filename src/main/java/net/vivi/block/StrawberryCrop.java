@@ -7,6 +7,7 @@ import net.minecraft.item.ItemConvertible;
 import net.vivi.init.CropInit;
 
 public class StrawberryCrop extends CropBlock {
+
     public StrawberryCrop(Settings settings) {
         super(FabricBlockSettings.copy(Blocks.POTATOES));
     }

@@ -15,6 +15,7 @@ import net.vivi.block.StrawberryCrop;
 import net.vivi.block.TomatoCrop;
 
 public class CropInit {
+
     public static final Item TOMATO = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(2.0f).snack().build()));
     public static final Block TOMATO_CROP = new TomatoCrop(FabricBlockSettings.of(Material.PLANT).ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
 
@@ -43,6 +44,7 @@ public class CropInit {
         Registry.register(Registry.BLOCK, new Identifier("vivi", "strawberry_crop"), STRAWBERRY_CROP);
         Registry.register(Registry.ITEM, new Identifier("vivi", "strawberry_seed"), new BlockItem(STRAWBERRY_CROP, new Item.Settings().group(ItemGroup.FOOD)));
 
+        //Misc.
         Registry.register(Registry.ITEM, new Identifier("vivi", "pickle"), PICKLE);
 
     }

@@ -6,6 +6,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.vivi.init.CropInit;
 
 public class ViviClient implements ClientModInitializer {
+
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), CropInit.TOMATO_CROP);

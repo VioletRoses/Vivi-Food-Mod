@@ -5,7 +5,9 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 public class CactusToolMaterial implements ToolMaterial {
+
 	public static final CactusToolMaterial INSTANCE = new CactusToolMaterial();
+
 	@Override
 	public int getDurability(){
 		return 149;

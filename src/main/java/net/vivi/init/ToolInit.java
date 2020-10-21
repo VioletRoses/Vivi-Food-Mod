@@ -9,6 +9,7 @@ import net.vivi.CactusSword;
 import net.vivi.CactusToolMaterial;
 
 public class ToolInit {
+
     public static final SwordItem CACTUS_SWORD = new CactusSword(CactusToolMaterial.INSTANCE, 0, -2.2f, new Item.Settings().group(ItemGroup.COMBAT));
 
     public static void init() {

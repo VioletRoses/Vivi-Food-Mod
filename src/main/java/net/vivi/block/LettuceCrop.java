@@ -7,6 +7,7 @@ import net.minecraft.item.ItemConvertible;
 import net.vivi.init.CropInit;
 
 public class LettuceCrop extends CropBlock {
+
     public LettuceCrop(Settings settings) {
         super(FabricBlockSettings.copy(Blocks.POTATOES));
     }
