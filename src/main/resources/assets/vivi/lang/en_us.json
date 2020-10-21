@@ -1,6 +1,7 @@
 {
   "item.vivi.cactus_sword": "Cactus Sword",
   "item.vivi.cactus_sword.item": "Cactus Sword",
+  "item.vivi.cactus_sword.tooltip": "Damages user on hit",
   "block.vivi.example_block": "Heart Block",
   "block.vivi.example_block.item": "Heart Block",
   "item.vivi.pickle": "Pickle",
