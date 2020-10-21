@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "vivi:block/corn_stage0"
+  }
+}

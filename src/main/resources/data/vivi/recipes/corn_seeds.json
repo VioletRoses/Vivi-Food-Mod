@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:corn"
+    }
+  ],
+  "result": {
+    "item": "vivi:corn_seeds",
+    "count": 1
+  }
+}
+

@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "vivi:tomato"
+      "item": "vivi:lettuce"
     }
   ],
   "result": {
-    "item": "vivi:tomato_seed",
+    "item": "vivi:lettuce_seeds",
     "count": 1
   }
 }
