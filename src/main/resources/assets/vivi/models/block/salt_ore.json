@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "crop": "vivi:block/salt_block"
+    "crop": "vivi:block/salt_ore"
   }
 }
