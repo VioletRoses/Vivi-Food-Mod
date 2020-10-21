@@ -3,10 +3,10 @@
   "id": "vivi",
   "version": "${version}",
 
-  "name": "Vivi's Mod",
-  "description": "ya yeet",
+  "name": "Vivi's Food Mod",
+  "description": "A food expansion mod for Minecraft",
   "authors": [
-    "Vivi"
+    "Vivian"
   ],
 
   "license": "CC0-1.0",
@@ -26,8 +26,5 @@
     "fabricloader": ">=0.7.4",
     "fabric": "*",
     "minecraft": "1.16.x"
-  },
-  "suggests": {
-    "flamingo": "*"
   }
 }
