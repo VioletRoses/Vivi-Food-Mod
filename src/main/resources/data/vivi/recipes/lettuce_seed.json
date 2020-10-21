@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:lettuce"
+    }
+  ],
+  "result": {
+    "item": "vivi:lettuce_seed",
+    "count": 1
+  }
+}
+

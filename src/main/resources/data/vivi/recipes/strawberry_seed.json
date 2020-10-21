@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:strawberry"
+    }
+  ],
+  "result": {
+    "item": "vivi:strawberry_seed",
+    "count": 1
+  }
+}
+

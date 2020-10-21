@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "vivi",
+  "version": "${version}",
+
+  "name": "Vivi's Mod",
+  "description": "ya yeet",
+  "authors": [
+    "Vivi"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/vivi/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.vivi.ViviMain"
+    ],
+    "client": [
+      "net.vivi.ViviClient"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:tomato"
+    }
+  ],
+  "result": {
+    "item": "vivi:tomato_seed",
+    "count": 1
+  }
+}
+

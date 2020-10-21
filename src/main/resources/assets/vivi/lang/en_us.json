@@ -1,0 +1,19 @@
+{
+  "item.vivi.cactus_sword": "Cactus Sword",
+  "item.vivi.cactus_sword.item": "Cactus Sword",
+  "block.vivi.example_block": "Heart Block",
+  "block.vivi.example_block.item": "Heart Block",
+  "item.vivi.pickle": "Pickle",
+  "item.vivi.pickle.item": "Pickle",
+  "item.vivi.lettuce": "Lettuce",
+  "item.vivi.lettuce.item": "Lettuce",
+  "item.vivi.salad": "Salad",
+  "item.vivi.salad.item": "Salad",
+  "item.vivi.tomato": "Tomato",
+  "item.vivi.tomato.item": "Tomato",
+  "item.vivi.tomato_seed.item": "Tomato Seed",
+  "item.vivi.tomato_seed": "Tomato Seed",
+  "item.vivi.lettuce_seed.item": "Lettuce Seed",
+  "item.vivi.lettuce_seed": "Lettuce Seed"
+}
+

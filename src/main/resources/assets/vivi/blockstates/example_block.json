@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "vivi:block/example_block" }
+  }
+}
