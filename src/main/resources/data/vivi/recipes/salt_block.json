@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "vivi:salt"
+    }
+  },
+  "result": {
+    "item": "vivi:salt_block",
+    "count": 1
+  }
+}
+
