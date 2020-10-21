@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class BlockInit {
-    public static final Block SALT_BLOCK = new Block(FabricBlockSettings.of(Material.SOIL).hardness(1.0f));
+    public static final Block SALT_BLOCK = new Block(FabricBlockSettings.of(Material.SOIL).hardness(0.5f));
     public static final Item SALT = new Item(new FabricItemSettings().group(ItemGroup.FOOD));
 
     public static void init() {
