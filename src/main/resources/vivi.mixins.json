@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.vivi.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "DefaultBiomeFeaturesMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
