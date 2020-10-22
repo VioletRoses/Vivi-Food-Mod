@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:tea_leaf"
+    }
+  ],
+  "result": {
+    "item": "vivi:tea_seeds",
+    "count": 1
+  }
+}
+

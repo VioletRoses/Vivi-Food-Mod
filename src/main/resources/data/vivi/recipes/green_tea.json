@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:tea_leaf"
+    },
+    {
+      "item": "minecraft:minecraft:potion{Potion:water}"
+    }
+  ],
+  "result": {
+    "item": "vivi:green_tea",
+    "count": 1
+  }
+}
+

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:coffee_beans"
+    }
+  ],
+  "result": {
+    "item": "vivi:coffee_seeds",
+    "count": 1
+  }
+}
+

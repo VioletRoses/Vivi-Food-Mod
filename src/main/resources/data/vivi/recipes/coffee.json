@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:coffee_beans"
+    },
+    {
+      "item": "minecraft:minecraft:potion{Potion:water}"
+    }
+  ],
+  "result": {
+    "item": "vivi:coffee",
+    "count": 1
+  }
+}
+
