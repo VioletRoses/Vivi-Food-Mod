@@ -30,6 +30,12 @@ public class CropInit {
     public static final Item SOYBEAN = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(1).saturationModifier(1.0f).snack().build()));
     public static final Block SOYBEAN_CROP = new SoybeanCrop(FabricBlockSettings.of(Material.PLANT).ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
 
+    public static final Item COFFEE_BEANS = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP));
+    public static final Block COFFEE_CROP = new CoffeeCrop(FabricBlockSettings.of(Material.PLANT).ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
+
+    public static final Item TEA_LEAF = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP));
+    public static final Block TEA_CROP = new TeaCrop(FabricBlockSettings.of(Material.PLANT).ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
+
     public static final Item PICKLE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(4).saturationModifier(5.0f).snack().build()));
 
 
@@ -58,6 +64,17 @@ public class CropInit {
         Registry.register(Registry.ITEM, new Identifier("vivi", "soybean"), SOYBEAN);
         Registry.register(Registry.BLOCK, new Identifier("vivi", "soybean_crop"), SOYBEAN_CROP);
         Registry.register(Registry.ITEM, new Identifier("vivi", "soybean_seeds"), new BlockItem(SOYBEAN_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+
+        //Coffee
+        Registry.register(Registry.ITEM, new Identifier("vivi", "coffee_beans"), COFFEE_BEANS);
+        Registry.register(Registry.BLOCK, new Identifier("vivi", "coffee_crop"), COFFEE_CROP);
+        Registry.register(Registry.ITEM, new Identifier("vivi", "coffee_seeds"), new BlockItem(COFFEE_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+
+        //Tea
+        Registry.register(Registry.ITEM, new Identifier("vivi", "tea_leaf"), TEA_LEAF);
+        Registry.register(Registry.BLOCK, new Identifier("vivi", "tea_crop"), TEA_CROP);
+        Registry.register(Registry.ITEM, new Identifier("vivi", "tea_seeds"), new BlockItem(TEA_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+
 
         //Miscellaneous
         Registry.register(Registry.ITEM, new Identifier("vivi", "pickle"), PICKLE);
