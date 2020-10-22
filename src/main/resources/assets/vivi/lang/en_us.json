@@ -15,6 +15,7 @@
   "block.vivi.salt_ore": "Salt Ore",
   "item.vivi.salt": "Salt",
   "item.vivi.raw_bacon": "Raw Bacon",
-  "item.vivi.cooked_bacon": "Cooked Bacon"
+  "item.vivi.cooked_bacon": "Cooked Bacon",
+  "itemGroup.vivi.food": "Vivi's Food"
 }
 
