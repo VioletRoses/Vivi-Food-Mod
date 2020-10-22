@@ -16,6 +16,10 @@
   "item.vivi.salt": "Salt",
   "item.vivi.raw_bacon": "Raw Bacon",
   "item.vivi.cooked_bacon": "Cooked Bacon",
+  "item.vivi.silken_tofu": "Silken Tofu",
+  "item.vivi.firm_tofu": "Firm Tofu",
+  "item.vivi.soybean": "Soybean",
+  "block.vivi.soybean_crop": "Soybean Seeds",
   "itemGroup.vivi.food": "Vivi's Food"
 }
 

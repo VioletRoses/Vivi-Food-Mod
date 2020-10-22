@@ -11,10 +11,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vivi.ViviMain;
-import net.vivi.block.CornCrop;
-import net.vivi.block.LettuceCrop;
-import net.vivi.block.StrawberryCrop;
-import net.vivi.block.TomatoCrop;
+import net.vivi.block.*;
 
 public class CropInit {
 
@@ -29,6 +26,9 @@ public class CropInit {
 
     public static final Item CORN = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(2.0f).snack().build()));
     public static final Block CORN_CROP = new CornCrop(FabricBlockSettings.of(Material.PLANT).ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
+
+    public static final Item SOYBEAN = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(1).saturationModifier(1.0f).snack().build()));
+    public static final Block SOYBEAN_CROP = new SoybeanCrop(FabricBlockSettings.of(Material.PLANT).ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
 
     public static final Item PICKLE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(4).saturationModifier(5.0f).snack().build()));
 
@@ -54,6 +54,10 @@ public class CropInit {
         Registry.register(Registry.BLOCK, new Identifier("vivi", "corn_crop"), CORN_CROP);
         Registry.register(Registry.ITEM, new Identifier("vivi", "corn_seeds"), new BlockItem(CORN_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
+        //Soybean
+        Registry.register(Registry.ITEM, new Identifier("vivi", "soybean"), SOYBEAN);
+        Registry.register(Registry.BLOCK, new Identifier("vivi", "soybean_crop"), SOYBEAN_CROP);
+        Registry.register(Registry.ITEM, new Identifier("vivi", "soybean_seeds"), new BlockItem(SOYBEAN_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
         //Miscellaneous
         Registry.register(Registry.ITEM, new Identifier("vivi", "pickle"), PICKLE);
