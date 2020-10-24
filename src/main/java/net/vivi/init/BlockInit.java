@@ -16,7 +16,7 @@ public class BlockInit {
     public static final Item SALT = new Item(new FabricItemSettings().group(ViviMain.VIVI_FOOD_GROUP));
 
     public static void init() {
-        //Salt
+        //Salt TODO: Salt item texture
         Registry.register(Registry.ITEM, new Identifier("vivi", "salt"), SALT);
         Registry.register(Registry.BLOCK, new Identifier("vivi", "salt_ore"), SALT_ORE);
         Registry.register(Registry.ITEM, new Identifier("vivi", "salt_ore"), new BlockItem(SALT_ORE, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
