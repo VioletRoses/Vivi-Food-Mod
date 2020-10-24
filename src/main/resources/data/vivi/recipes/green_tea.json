@@ -5,7 +5,7 @@
       "item": "vivi:tea_leaf"
     },
     {
-      "item": "minecraft:minecraft:potion"
+      "item": "minecraft:potion{Potion:water}"
     }
   ],
   "result": {

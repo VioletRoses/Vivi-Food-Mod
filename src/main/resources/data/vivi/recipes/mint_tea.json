@@ -5,7 +5,7 @@
       "item": "vivi:mint_leaf"
     },
     {
-      "item": "minecraft:potion"
+      "item": "minecraft:potion{Potion:water}"
     }
   ],
   "result": {
