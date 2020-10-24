@@ -18,9 +18,9 @@ public class FoodInit {
     public static final Item COOKED_BACON = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(10).saturationModifier(14f).meat().build()));
     public static final Item SILKEN_TOFU = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(2.0f).snack().build()));
     public static final Item FIRM_TOFU = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(6).saturationModifier(5.0f).build()));
-    public static final Item COFFEE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(5.0f).alwaysEdible().snack().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 60), 1.0f).build()));
-    public static final Item GREEN_TEA = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(2.0f).alwaysEdible().snack().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 5), 0.8f).build()));
-    public static final Item MINT_TEA = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(4.0f).alwaysEdible().snack().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 10), 1.0f).build()));
+    public static final Item COFFEE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(5.0f).alwaysEdible().snack().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 60 * 20), 1.0f).build()));
+    public static final Item GREEN_TEA = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(2.0f).alwaysEdible().snack().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 5 * 20), 0.8f).build()));
+    public static final Item MINT_TEA = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(4.0f).alwaysEdible().snack().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 10 * 20), 1.0f).build()));
 
     public static void init() {
         Registry.register(Registry.ITEM, new Identifier("vivi", "strawberry_jelly"), STRAWBERRY_JELLY);
