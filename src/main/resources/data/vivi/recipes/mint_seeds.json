@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:mint_leaf"
+    }
+  ],
+  "result": {
+    "item": "vivi:mint_seeds",
+    "count": 1
+  }
+}
+

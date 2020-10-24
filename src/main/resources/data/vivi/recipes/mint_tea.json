@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vivi:mint_leaf"
+    },
+    {
+      "item": "minecraft:potion{Potion:water}"
+    }
+  ],
+  "result": {
+    "item": "vivi:mint_tea",
+    "count": 1
+  }
+}
+

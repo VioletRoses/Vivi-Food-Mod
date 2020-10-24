@@ -6,7 +6,6 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -35,6 +34,9 @@ public class CropInit {
 
     public static final Item TEA_LEAF = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP));
     public static final Block TEA_CROP = new TeaCrop(FabricBlockSettings.of(Material.PLANT).ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
+
+    public static final Item MINT_LEAF = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP));
+    public static final Block MINT_CROP = new MintCrop(FabricBlockSettings.of(Material.PLANT).ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));
 
     public static final Item PICKLE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(4).saturationModifier(5.0f).snack().build()));
 
@@ -75,6 +77,12 @@ public class CropInit {
         Registry.register(Registry.BLOCK, new Identifier("vivi", "tea_crop"), TEA_CROP);
         Registry.register(Registry.ITEM, new Identifier("vivi", "tea_seeds"), new BlockItem(TEA_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
+        //Mint
+        Registry.register(Registry.ITEM, new Identifier("vivi", "mint_leaf"), MINT_LEAF);
+        Registry.register(Registry.BLOCK, new Identifier("vivi", "mint_crop"), MINT_CROP);
+        Registry.register(Registry.ITEM, new Identifier("vivi", "mint_seeds"), new BlockItem(MINT_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+
+        //
 
         //Miscellaneous
         Registry.register(Registry.ITEM, new Identifier("vivi", "pickle"), PICKLE);

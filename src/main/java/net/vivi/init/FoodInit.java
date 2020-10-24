@@ -1,11 +1,9 @@
 package net.vivi.init;
 
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vivi.ViviMain;
@@ -22,6 +20,7 @@ public class FoodInit {
     public static final Item FIRM_TOFU = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(6).saturationModifier(5.0f).build()));
     public static final Item COFFEE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(5.0f).alwaysEdible().snack().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 60), 1.0f).build()));
     public static final Item GREEN_TEA = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(2.0f).alwaysEdible().snack().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 5), 0.8f).build()));
+    public static final Item MINT_TEA = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(4.0f).alwaysEdible().snack().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 10), 1.0f).build()));
 
     public static void init() {
         Registry.register(Registry.ITEM, new Identifier("vivi", "strawberry_jelly"), STRAWBERRY_JELLY);
@@ -34,5 +33,6 @@ public class FoodInit {
         Registry.register(Registry.ITEM, new Identifier("vivi", "firm_tofu"), FIRM_TOFU);
         Registry.register(Registry.ITEM, new Identifier("vivi", "coffee"), COFFEE);
         Registry.register(Registry.ITEM, new Identifier("vivi", "green_tea"), GREEN_TEA);
+        Registry.register(Registry.ITEM, new Identifier("vivi", "mint_tea"), MINT_TEA);
     }
 }
