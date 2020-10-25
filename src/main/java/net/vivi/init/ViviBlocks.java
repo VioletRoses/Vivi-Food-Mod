@@ -7,6 +7,7 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vivi.ViviMain;
@@ -17,7 +18,7 @@ public class ViviBlocks {
     //TODO: Salt texture
     public static final Block PEACH_SAPLING = new Block(FabricBlockSettings.of(Material.PLANT).breakInstantly());
     //TODO: Peach sapling texture
-    public static final Block PEACH_LEAVES = new Block(FabricBlockSettings.of(Material.LEAVES).hardness(0.2f));
+    public static final Block PEACH_LEAVES = new Block(FabricBlockSettings.of(Material.LEAVES).hardness(0.2f).sounds(BlockSoundGroup.VINE));
     //TODO: Peach leaves texture
 
     public static void init() {
