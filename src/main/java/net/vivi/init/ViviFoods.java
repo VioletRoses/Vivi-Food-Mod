@@ -9,7 +9,10 @@ import net.minecraft.util.registry.Registry;
 import net.vivi.ViviMain;
 import net.vivi.item.DrinkItem;
 
-public class FoodInit {
+public class ViviFoods {
+
+    //TODO: Peach texture
+    public static final Item PEACH = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(1.0f).snack().build()));
     //TODO: Strawberry jelly texture
     public static final Item STRAWBERRY_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(1.0f).snack().build()));
     //TODO: Salad texture
@@ -46,5 +49,6 @@ public class FoodInit {
         Registry.register(Registry.ITEM, new Identifier("vivi", "coffee"), COFFEE);
         Registry.register(Registry.ITEM, new Identifier("vivi", "green_tea"), GREEN_TEA);
         Registry.register(Registry.ITEM, new Identifier("vivi", "mint_tea"), MINT_TEA);
+        Registry.register(Registry.ITEM, new Identifier("vivi", "peach"), PEACH);
     }
 }

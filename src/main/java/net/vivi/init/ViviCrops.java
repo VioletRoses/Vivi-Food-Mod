@@ -12,7 +12,7 @@ import net.minecraft.util.registry.Registry;
 import net.vivi.ViviMain;
 import net.vivi.block.*;
 
-public class CropInit {
+public class ViviCrops {
 
     public static final Item TOMATO = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(1.0f).snack().build()));
     public static final Block TOMATO_CROP = new TomatoCrop(FabricBlockSettings.of(Material.PLANT).ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP));

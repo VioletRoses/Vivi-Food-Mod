@@ -9,7 +9,7 @@ import net.vivi.ViviMain;
 import net.vivi.tool.CactusSword;
 import net.vivi.tool.material.CactusToolMaterial;
 
-public class ToolInit {
+public class ViviTools {
 
     public static final SwordItem CACTUS_SWORD = new CactusSword(CactusToolMaterial.INSTANCE, 0, -2.2f, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP));
 

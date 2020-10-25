@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
 import net.minecraft.item.ItemConvertible;
-import net.vivi.init.CropInit;
+import net.vivi.init.ViviCrops;
 
 public class SoybeanCrop extends CropBlock {
 
@@ -14,6 +14,6 @@ public class SoybeanCrop extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return CropInit.SOYBEAN_CROP;
+        return ViviCrops.SOYBEAN_CROP;
     }
 }

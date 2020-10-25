@@ -5,28 +5,28 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import net.vivi.init.BlockInit;
-import net.vivi.init.CropInit;
-import net.vivi.init.FoodInit;
-import net.vivi.init.ToolInit;
-import net.vivi.init.WorldGenInit;
+import net.vivi.init.ViviBlocks;
+import net.vivi.init.ViviCrops;
+import net.vivi.init.ViviFoods;
+import net.vivi.init.ViviTools;
+import net.vivi.init.ViviWorldGen;
 
 public class ViviMain implements ModInitializer {
 
-	public static final ItemGroup VIVI_FOOD_GROUP = FabricItemGroupBuilder.build(new Identifier("vivi", "food"), () -> new ItemStack(CropInit.STRAWBERRY));
+	public static final ItemGroup VIVI_FOOD_GROUP = FabricItemGroupBuilder.build(new Identifier("vivi", "food"), () -> new ItemStack(ViviCrops.STRAWBERRY));
 
 	@Override
 	public void onInitialize() {
 		System.out.println("Vivi's food mod is starting!");
 		//Adds crops/base foods
-		CropInit.init();
+		ViviCrops.init();
 		//Adds meals/combined foods
-		FoodInit.init();
+		ViviFoods.init();
 		//Adds tools
-		ToolInit.init();
+		ViviTools.init();
 		//Adds blocks (salt, etc.)
-		BlockInit.init();
+		ViviBlocks.init();
 		//Enables worldgen features
-		WorldGenInit.init();
+		ViviWorldGen.init();
 	}
 }
