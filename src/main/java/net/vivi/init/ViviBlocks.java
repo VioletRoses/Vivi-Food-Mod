@@ -2,14 +2,15 @@ package net.vivi.init;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.BlockView;
 import net.vivi.ViviMain;
 
 public class ViviBlocks {
@@ -18,8 +19,11 @@ public class ViviBlocks {
     //TODO: Salt texture
     public static final Block PEACH_SAPLING = new Block(FabricBlockSettings.of(Material.PLANT).breakInstantly());
     //TODO: Peach sapling texture
-    public static final Block PEACH_LEAVES = new Block(FabricBlockSettings.of(Material.LEAVES).hardness(0.2f).sounds(BlockSoundGroup.VINE));
-    //TODO: Peach leaves texture
+    public static final Block PEACH_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).hardness(0.2f).materialColor(MaterialColor.GREEN_TERRACOTTA).suffocates(ViviBlocks::never).blockVision(ViviBlocks::never).sounds(BlockSoundGroup.GRASS));
+
+    public static boolean never(BlockState state, BlockView world, BlockPos pos) {
+        return false;
+    }
 
     public static void init() {
         Registry.register(Registry.BLOCK, new Identifier("vivi", "peach_leaves"), PEACH_LEAVES);
