@@ -4,6 +4,7 @@
   "block.vivi.lettuce_crop": "Lettuce Seeds",
   "block.vivi.mint_crop": "Mint Seeds",
   "block.vivi.peach_leaves": "Peach Leaves",
+  "block.vivi.peach_sapling": "Peach Sapling",
   "block.vivi.salt_ore": "Salt Ore",
   "block.vivi.soybean_crop": "Soybean Seeds",
   "block.vivi.strawberry_crop": "Strawberry Seeds",
@@ -21,6 +22,7 @@
   "item.vivi.lettuce": "Lettuce",
   "item.vivi.mint_leaf": "Mint Leaf",
   "item.vivi.peach": "Peach",
+  "item.vivi.peach_tea": "Peach Tea",
   "item.vivi.pickle": "Pickle",
   "item.vivi.raw_bacon": "Raw Bacon",
   "item.vivi.salad": "Salad",
@@ -30,7 +32,6 @@
   "item.vivi.strawberry": "Strawberry",
   "item.vivi.strawberry_jelly": "Strawberry Jelly",
   "item.vivi.tea_leaf": "Tea Leaf",
-  "block.vivi.peach_sapling": "Peach Sapling",
   "item.vivi.tofu_salad": "Tofu Salad",
   "item.vivi.tomato": "Tomato",
   "itemGroup.vivi.food": "Vivi's Food"

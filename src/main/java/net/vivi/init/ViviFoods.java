@@ -34,8 +34,9 @@ public class ViviFoods {
     //TODO: Green tea texture
     public static final Item GREEN_TEA = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 5 * 20), 0.8f).build()));
     //TODO: Mint tea texture
-    public static final Item MINT_TEA = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 10 * 20), 1.0f).build()));
-
+    public static final Item MINT_TEA = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 8 * 20), 0.9f).build()));
+    //TODO: Peach tea texture
+    public static final Item PEACH_TEA = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(5).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 11 * 20), 1.0f).build()));
 
     public static void init() {
         Registry.register(Registry.ITEM, new Identifier("vivi", "strawberry_jelly"), STRAWBERRY_JELLY);
@@ -49,6 +50,7 @@ public class ViviFoods {
         Registry.register(Registry.ITEM, new Identifier("vivi", "coffee"), COFFEE);
         Registry.register(Registry.ITEM, new Identifier("vivi", "green_tea"), GREEN_TEA);
         Registry.register(Registry.ITEM, new Identifier("vivi", "mint_tea"), MINT_TEA);
+        Registry.register(Registry.ITEM, new Identifier("vivi", "peach_tea"), PEACH_TEA);
         Registry.register(Registry.ITEM, new Identifier("vivi", "peach"), PEACH);
     }
 }
