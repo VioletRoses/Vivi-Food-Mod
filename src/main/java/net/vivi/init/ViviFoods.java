@@ -5,9 +5,10 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.vivi.ViviMain;
 import net.vivi.item.DrinkItem;
+
+import static net.minecraft.util.registry.Registry.*;
 
 public class ViviFoods {
 
@@ -39,18 +40,18 @@ public class ViviFoods {
     public static final Item PEACH_TEA = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(5).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 11 * 20), 1.0f).build()));
 
     public static void init() {
-        Registry.register(Registry.ITEM, new Identifier("vivi", "strawberry_jelly"), STRAWBERRY_JELLY);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "salad"), SALAD);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "chicken_salad"), CHICKEN_SALAD);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "tofu_salad"), TOFU_SALAD);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "raw_bacon"), RAW_BACON);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "cooked_bacon"), COOKED_BACON);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "silken_tofu"), SILKEN_TOFU);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "firm_tofu"), FIRM_TOFU);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "coffee"), COFFEE);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "green_tea"), GREEN_TEA);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "mint_tea"), MINT_TEA);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "peach_tea"), PEACH_TEA);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "peach"), PEACH);
+        register(ITEM, new Identifier("vivi", "strawberry_jelly"), STRAWBERRY_JELLY);
+        register(ITEM, new Identifier("vivi", "salad"), SALAD);
+        register(ITEM, new Identifier("vivi", "chicken_salad"), CHICKEN_SALAD);
+        register(ITEM, new Identifier("vivi", "tofu_salad"), TOFU_SALAD);
+        register(ITEM, new Identifier("vivi", "raw_bacon"), RAW_BACON);
+        register(ITEM, new Identifier("vivi", "cooked_bacon"), COOKED_BACON);
+        register(ITEM, new Identifier("vivi", "silken_tofu"), SILKEN_TOFU);
+        register(ITEM, new Identifier("vivi", "firm_tofu"), FIRM_TOFU);
+        register(ITEM, new Identifier("vivi", "coffee"), COFFEE);
+        register(ITEM, new Identifier("vivi", "green_tea"), GREEN_TEA);
+        register(ITEM, new Identifier("vivi", "mint_tea"), MINT_TEA);
+        register(ITEM, new Identifier("vivi", "peach_tea"), PEACH_TEA);
+        register(ITEM, new Identifier("vivi", "peach"), PEACH);
     }
 }

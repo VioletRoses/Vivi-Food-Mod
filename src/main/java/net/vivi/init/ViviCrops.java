@@ -8,9 +8,10 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.vivi.ViviMain;
 import net.vivi.block.*;
+
+import static net.minecraft.util.registry.Registry.*;
 
 public class ViviCrops {
 
@@ -43,49 +44,49 @@ public class ViviCrops {
 
     public static void init() {
         //Tomato
-        Registry.register(Registry.ITEM, new Identifier("vivi", "tomato"), TOMATO);
-        Registry.register(Registry.BLOCK, new Identifier("vivi", "tomato_crop"), TOMATO_CROP);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "tomato_seeds"), new BlockItem(TOMATO_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+        register(ITEM, new Identifier("vivi", "tomato"), TOMATO);
+        register(BLOCK, new Identifier("vivi", "tomato_crop"), TOMATO_CROP);
+        register(ITEM, new Identifier("vivi", "tomato_seeds"), new BlockItem(TOMATO_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
         //Lettuce TODO: Lettuce crop texture, item texture
-        Registry.register(Registry.ITEM, new Identifier("vivi", "lettuce"), LETTUCE);
-        Registry.register(Registry.BLOCK, new Identifier("vivi", "lettuce_crop"), LETTUCE_CROP);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "lettuce_seeds"), new BlockItem(LETTUCE_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+        register(ITEM, new Identifier("vivi", "lettuce"), LETTUCE);
+        register(BLOCK, new Identifier("vivi", "lettuce_crop"), LETTUCE_CROP);
+        register(ITEM, new Identifier("vivi", "lettuce_seeds"), new BlockItem(LETTUCE_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
         //Strawberry TODO: Strawberry crop texture
-        Registry.register(Registry.ITEM, new Identifier("vivi", "strawberry"), STRAWBERRY);
-        Registry.register(Registry.BLOCK, new Identifier("vivi", "strawberry_crop"), STRAWBERRY_CROP);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "strawberry_seeds"), new BlockItem(STRAWBERRY_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+        register(ITEM, new Identifier("vivi", "strawberry"), STRAWBERRY);
+        register(BLOCK, new Identifier("vivi", "strawberry_crop"), STRAWBERRY_CROP);
+        register(ITEM, new Identifier("vivi", "strawberry_seeds"), new BlockItem(STRAWBERRY_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
         //Corn TODO: Corn crop texture
-        Registry.register(Registry.ITEM, new Identifier("vivi", "corn"), CORN);
-        Registry.register(Registry.BLOCK, new Identifier("vivi", "corn_crop"), CORN_CROP);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "corn_seeds"), new BlockItem(CORN_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+        register(ITEM, new Identifier("vivi", "corn"), CORN);
+        register(BLOCK, new Identifier("vivi", "corn_crop"), CORN_CROP);
+        register(ITEM, new Identifier("vivi", "corn_seeds"), new BlockItem(CORN_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
         //Soybean TODO: Soybean crop texture, item texture
-        Registry.register(Registry.ITEM, new Identifier("vivi", "soybean"), SOYBEAN);
-        Registry.register(Registry.BLOCK, new Identifier("vivi", "soybean_crop"), SOYBEAN_CROP);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "soybean_seeds"), new BlockItem(SOYBEAN_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+        register(ITEM, new Identifier("vivi", "soybean"), SOYBEAN);
+        register(BLOCK, new Identifier("vivi", "soybean_crop"), SOYBEAN_CROP);
+        register(ITEM, new Identifier("vivi", "soybean_seeds"), new BlockItem(SOYBEAN_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
         //Coffee TODO: Coffee crop texture, item texture
-        Registry.register(Registry.ITEM, new Identifier("vivi", "coffee_beans"), COFFEE_BEANS);
-        Registry.register(Registry.BLOCK, new Identifier("vivi", "coffee_crop"), COFFEE_CROP);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "coffee_seeds"), new BlockItem(COFFEE_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+        register(ITEM, new Identifier("vivi", "coffee_beans"), COFFEE_BEANS);
+        register(BLOCK, new Identifier("vivi", "coffee_crop"), COFFEE_CROP);
+        register(ITEM, new Identifier("vivi", "coffee_seeds"), new BlockItem(COFFEE_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
         //Tea TODO: Tea crop texture, item texture
-        Registry.register(Registry.ITEM, new Identifier("vivi", "tea_leaf"), TEA_LEAF);
-        Registry.register(Registry.BLOCK, new Identifier("vivi", "tea_crop"), TEA_CROP);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "tea_seeds"), new BlockItem(TEA_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+        register(ITEM, new Identifier("vivi", "tea_leaf"), TEA_LEAF);
+        register(BLOCK, new Identifier("vivi", "tea_crop"), TEA_CROP);
+        register(ITEM, new Identifier("vivi", "tea_seeds"), new BlockItem(TEA_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
         //Mint TODO: Mint crop texture, item texture
-        Registry.register(Registry.ITEM, new Identifier("vivi", "mint_leaf"), MINT_LEAF);
-        Registry.register(Registry.BLOCK, new Identifier("vivi", "mint_crop"), MINT_CROP);
-        Registry.register(Registry.ITEM, new Identifier("vivi", "mint_seeds"), new BlockItem(MINT_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
+        register(ITEM, new Identifier("vivi", "mint_leaf"), MINT_LEAF);
+        register(BLOCK, new Identifier("vivi", "mint_crop"), MINT_CROP);
+        register(ITEM, new Identifier("vivi", "mint_seeds"), new BlockItem(MINT_CROP, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
 
         //
 
         //Miscellaneous
-        Registry.register(Registry.ITEM, new Identifier("vivi", "pickle"), PICKLE);
+        register(ITEM, new Identifier("vivi", "pickle"), PICKLE);
 
     }
 }
