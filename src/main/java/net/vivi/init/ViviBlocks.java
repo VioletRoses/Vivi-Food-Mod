@@ -11,12 +11,13 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.vivi.ViviMain;
+import net.vivi.block.ViviGrass;
 
 import static net.minecraft.util.registry.Registry.*;
 
 public class ViviBlocks {
 
-    public static final Block GARDEN_GRASS = new Block(FabricBlockSettings.of(Material.PLANT).breakInstantly().sounds(BlockSoundGroup.CROP));
+    public static final Block GARDEN_GRASS = new ViviGrass(FabricBlockSettings.copyOf(Blocks.GRASS).breakInstantly().materialColor(MaterialColor.GREEN_TERRACOTTA).sounds(BlockSoundGroup.GRASS).suffocates(ViviBlocks::never).blockVision(ViviBlocks::never).collidable(false));
     public static final Block SALT_ORE = new Block(FabricBlockSettings.of(Material.STONE).hardness(1.0f).requiresTool());
     public static final Item SALT = new Item(new FabricItemSettings().group(ViviMain.VIVI_FOOD_GROUP));
     //TODO: Salt texture
@@ -30,6 +31,7 @@ public class ViviBlocks {
 
     public static void init() {
         register(BLOCK, new Identifier("vivi", "garden_grass"), GARDEN_GRASS);
+        register(ITEM, new Identifier("vivi", "garden_grass"), new BlockItem(GARDEN_GRASS, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));
         register(BLOCK, new Identifier("vivi", "peach_leaves"), PEACH_LEAVES);
         register(BLOCK, new Identifier("vivi", "peach_sapling"), PEACH_SAPLING);
         register(ITEM, new Identifier("vivi", "peach_sapling"), new BlockItem(PEACH_SAPLING, new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP)));

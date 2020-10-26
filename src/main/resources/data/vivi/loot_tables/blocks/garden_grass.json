@@ -1,0 +1,86 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "vivi:tomato_seeds",
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "vivi:strawberry_seeds",
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "vivi:corn_seeds",
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "vivi:mint_seeds",
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "vivi:coffee_seeds",
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "vivi:tea_seeds",
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "vivi:soybean_seeds",
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.25
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

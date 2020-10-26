@@ -7,6 +7,7 @@ import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.FoliageColors;
+import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.client.render.RenderLayer;
 
 import static net.vivi.init.ViviBlocks.*;
@@ -19,7 +20,10 @@ public class ViviClient implements ClientModInitializer {
             (block, world, pos, layer) -> world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefaultColor();
     private static final ItemColorProvider FOLIAGE_ITEM_COLORS =
             (item, layer) -> FoliageColors.getColor(0.5, 1.0);
-
+    private static final BlockColorProvider GRASS_BLOCK_COLORS =
+            (block, world, pos, layer) -> world != null && pos != null ? BiomeColors.getGrassColor(world, pos) : FoliageColors.getDefaultColor();
+    private static final ItemColorProvider GRASS_ITEM_COLORS =
+            (item, layer) -> GrassColors.getColor(0.5, 1.0);
 
     @Override
     public void onInitializeClient() {
@@ -30,6 +34,14 @@ public class ViviClient implements ClientModInitializer {
         ColorProviderRegistry.ITEM.register(
                 FOLIAGE_ITEM_COLORS,
                 PEACH_LEAVES
+        );
+        ColorProviderRegistry.BLOCK.register(
+                GRASS_BLOCK_COLORS,
+                GARDEN_GRASS
+        );
+        ColorProviderRegistry.ITEM.register(
+                GRASS_ITEM_COLORS,
+                GARDEN_GRASS
         );
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), GARDEN_GRASS);
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), TOMATO_CROP);

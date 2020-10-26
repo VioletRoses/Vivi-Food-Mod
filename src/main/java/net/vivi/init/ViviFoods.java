@@ -13,7 +13,7 @@ import static net.minecraft.util.registry.Registry.*;
 public class ViviFoods {
 
     //TODO: Peach texture
-    public static final Item PEACH = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(1.0f).build()));
+    public static final Item PEACH = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).build()));
     //TODO: Strawberry jelly texture
     public static final Item STRAWBERRY_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(1.0f).build()));
     //TODO: Salad texture
