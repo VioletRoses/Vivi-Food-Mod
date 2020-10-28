@@ -32,11 +32,34 @@ public class ViviWorldGen {
             new StraightTrunkPlacer(6, 0, 0),
             new TwoLayersFeatureSize(1, 0, 0))
             .build());
+    public static ConfiguredFeature<?, ?> ORANGE_TREE = Feature.TREE.configure(new TreeFeatureConfig.Builder(
+            new SimpleBlockStateProvider(Blocks.OAK_LOG.getDefaultState()),
+            new SimpleBlockStateProvider(ViviBlocks.ORANGE_LEAVES.getDefaultState()),
+            new BlobFoliagePlacer(UniformIntDistribution.of(2), UniformIntDistribution.of(0), 3),
+            new StraightTrunkPlacer(6, 0, 0),
+            new TwoLayersFeatureSize(1, 0, 0))
+            .build());
+    public static ConfiguredFeature<?, ?> LYCHEE_TREE = Feature.TREE.configure(new TreeFeatureConfig.Builder(
+            new SimpleBlockStateProvider(Blocks.OAK_LOG.getDefaultState()),
+            new SimpleBlockStateProvider(ViviBlocks.LYCHEE_LEAVES.getDefaultState()),
+            new BlobFoliagePlacer(UniformIntDistribution.of(2), UniformIntDistribution.of(0), 3),
+            new StraightTrunkPlacer(6, 0, 0),
+            new TwoLayersFeatureSize(1, 0, 0))
+            .build());
+    public static ConfiguredFeature<?, ?> CHERRY_TREE = Feature.TREE.configure(new TreeFeatureConfig.Builder(
+            new SimpleBlockStateProvider(Blocks.OAK_LOG.getDefaultState()),
+            new SimpleBlockStateProvider(ViviBlocks.CHERRY_LEAVES.getDefaultState()),
+            new BlobFoliagePlacer(UniformIntDistribution.of(2), UniformIntDistribution.of(0), 3),
+            new StraightTrunkPlacer(6, 0, 0),
+            new TwoLayersFeatureSize(1, 0, 0))
+            .build());
+
     public static ConfiguredFeature<?, ?> GARDEN_GRASS = Feature.RANDOM_PATCH.configure(new RandomPatchFeatureConfig.Builder(new SimpleBlockStateProvider(ViviBlocks.GARDEN_GRASS.getDefaultState()), new SimpleBlockPlacer()).tries(10).whitelist(SOIL).cannotProject().build()).decorate(Decorator.HEIGHTMAP_WORLD_SURFACE.configure(NopeDecoratorConfig.DEFAULT));
 
     public static void init() {
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "garden_grass"), GARDEN_GRASS);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "peach_tree"), PEACH_TREE);
+        register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "orange_tree"), ORANGE_TREE);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "ore_salt_overworld"), ORE_SALT_OVERWORLD);
     }
 }

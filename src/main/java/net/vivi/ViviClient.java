@@ -29,11 +29,17 @@ public class ViviClient implements ClientModInitializer {
     public void onInitializeClient() {
         ColorProviderRegistry.BLOCK.register(
                 FOLIAGE_BLOCK_COLORS,
-                PEACH_LEAVES
+                PEACH_LEAVES,
+                ORANGE_LEAVES,
+                CHERRY_LEAVES,
+                LYCHEE_LEAVES
         );
         ColorProviderRegistry.ITEM.register(
                 FOLIAGE_ITEM_COLORS,
-                PEACH_LEAVES
+                PEACH_LEAVES,
+                ORANGE_LEAVES,
+                CHERRY_LEAVES,
+                LYCHEE_LEAVES
         );
         ColorProviderRegistry.BLOCK.register(
                 GRASS_BLOCK_COLORS,

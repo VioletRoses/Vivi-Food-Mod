@@ -5,15 +5,11 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import net.vivi.init.ViviBlocks;
-import net.vivi.init.ViviCrops;
-import net.vivi.init.ViviFoods;
-import net.vivi.init.ViviTools;
-import net.vivi.init.ViviWorldGen;
+import net.vivi.init.*;
 
 public class ViviMain implements ModInitializer {
 
-	public static final ItemGroup VIVI_FOOD_GROUP = FabricItemGroupBuilder.build(new Identifier("vivi", "food"), () -> new ItemStack(ViviCrops.STRAWBERRY));
+	public static final ItemGroup VIVI_FOOD_GROUP = FabricItemGroupBuilder.build(new Identifier("vivi", "food"), () -> new ItemStack(ViviFoods.STRAWBERRY));
 
 	@Override
 	public void onInitialize() {
@@ -28,5 +24,7 @@ public class ViviMain implements ModInitializer {
 		ViviBlocks.init();
 		//Enables worldgen features
 		ViviWorldGen.init();
+		//Adds items
+		ViviItems.init();
 	}
 }
