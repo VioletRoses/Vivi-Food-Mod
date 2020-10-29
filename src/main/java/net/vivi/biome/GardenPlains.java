@@ -29,8 +29,8 @@ public class GardenPlains {
         generationSettings.feature(Feature.VEGETAL_DECORATION, DENSE_GARDEN_GRASS);
         return new Biome.Builder()
                 .precipitation(Biome.Precipitation.RAIN)
-                .category(Biome.Category.FOREST)
-                .depth(0.125f)
+                .category(Biome.Category.PLAINS)
+                .depth(0f)
                 .scale(0.05f)
                 .temperature(0.8f)
                 .downfall(0.4f)
