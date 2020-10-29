@@ -50,7 +50,11 @@ public class ViviBlocks {
         register(BLOCK, new Identifier("vivi", "orange_leaves"), ORANGE_LEAVES);
         //TODO: Cherry leaves texture
         register(BLOCK, new Identifier("vivi", "cherry_leaves"), CHERRY_LEAVES);
+        register(BLOCK, new Identifier("vivi", "lychee_leaves"), LYCHEE_LEAVES);
         register(ITEM, new Identifier("vivi", "peach_leaves"), new BlockItem(PEACH_LEAVES, new Item.Settings().group(ItemGroup.DECORATIONS)));
+        register(ITEM, new Identifier("vivi", "orange_leaves"), new BlockItem(ORANGE_LEAVES, new Item.Settings().group(ItemGroup.DECORATIONS)));
+        register(ITEM, new Identifier("vivi", "cherry_leaves"), new BlockItem(CHERRY_LEAVES, new Item.Settings().group(ItemGroup.DECORATIONS)));
+        register(ITEM, new Identifier("vivi", "lychee_leaves"), new BlockItem(LYCHEE_LEAVES, new Item.Settings().group(ItemGroup.DECORATIONS)));
 
         //Saplings
         //TODO: Peach sapling texture

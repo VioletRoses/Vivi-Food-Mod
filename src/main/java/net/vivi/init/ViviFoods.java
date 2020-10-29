@@ -95,9 +95,9 @@ public class ViviFoods {
         //TODO: Grape jelly texture
         register(ITEM, new Identifier("vivi", "grape_jelly"), GRAPE_JELLY);
         //TODO: Orange jelly texture
-        register(ITEM, new Identifier("vivi", "strawberry_jelly"), ORANGE_JELLY);
+        register(ITEM, new Identifier("vivi", "orange_jelly"), ORANGE_JELLY);
         //TODO: Peach jelly texture
-        register(ITEM, new Identifier("vivi", "strawberry_jelly"), PEACH_JELLY);
+        register(ITEM, new Identifier("vivi", "peach_jelly"), PEACH_JELLY);
         //TODO: Cherry jelly texture
         register(ITEM, new Identifier("vivi", "cherry_jelly"), CHERRY_JELLY);
 
