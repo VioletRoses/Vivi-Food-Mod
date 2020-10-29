@@ -18,6 +18,7 @@ import net.minecraft.world.gen.placer.SimpleBlockPlacer;
 import net.minecraft.world.gen.stateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.vivi.biome.FruitForest;
+import net.vivi.biome.GardenPlains;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -53,19 +54,29 @@ public class ViviWorldGen {
     public static ConfiguredFeature<?, ?> DENSE_PEACH_TREES = PEACH_TREE.decorate(SQUARE_HEIGHTMAP).decorate(ViviDecorators.denseTrees);
 
     public static ConfiguredFeature<?, ?> GARDEN_GRASS = Feature.RANDOM_PATCH.configure(new RandomPatchFeatureConfig.Builder(new SimpleBlockStateProvider(ViviBlocks.GARDEN_GRASS.getDefaultState()), new SimpleBlockPlacer()).tries(14).whitelist(SOIL).cannotProject().build()).decorate(Decorator.HEIGHTMAP_WORLD_SURFACE.configure(NopeDecoratorConfig.DEFAULT));
+    public static ConfiguredFeature<?, ?> DENSE_GARDEN_GRASS = Feature.RANDOM_PATCH.configure(new RandomPatchFeatureConfig.Builder(new SimpleBlockStateProvider(ViviBlocks.GARDEN_GRASS.getDefaultState()), new SimpleBlockPlacer()).tries(64).whitelist(SOIL).cannotProject().build()).decorate(Decorator.HEIGHTMAP_WORLD_SURFACE.configure(NopeDecoratorConfig.DEFAULT));
 
     public static void init() {
+
+        //Feature Register
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "garden_grass"), GARDEN_GRASS);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "peach_tree"), PEACH_TREE);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "orange_tree"), ORANGE_TREE);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "lychee_tree"), LYCHEE_TREE);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "cherry_tree"), CHERRY_TREE);
+        register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "dense_garden_grass"), DENSE_GARDEN_GRASS);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "dense_cherry_trees"), DENSE_CHERRY_TREES);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "dense_orange_trees"), DENSE_ORANGE_TREES);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "dense_lychee_trees"), DENSE_LYCHEE_TREES);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "dense_peach_trees"), DENSE_PEACH_TREES);
         register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("vivi", "ore_salt_overworld"), ORE_SALT_OVERWORLD);
+
+        //Biome Register
         BuiltinRegistries.add(BuiltinRegistries.BIOME, new Identifier("vivi", "fruit_forest"), FruitForest.create());
+        BuiltinRegistries.add(BuiltinRegistries.BIOME, new Identifier("vivi", "garden_plains"), GardenPlains.create());
+
+        //Biome Worldgen
         addContinentalBiome(RegistryKey.of(BIOME_KEY, new Identifier("vivi", "fruit_forest")), COOL,1.0f);
+        addContinentalBiome(RegistryKey.of(BIOME_KEY, new Identifier("vivi", "garden_plains")), COOL,1.0f);
     }
 }
