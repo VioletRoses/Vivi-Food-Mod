@@ -18,10 +18,10 @@ public class DefaultBiomeFeaturesMixin {
     }
     @Inject(method = "addForestTrees(Lnet/minecraft/world/biome/GenerationSettings$Builder;)V", at = @At("TAIL"))
     private static void addForestTrees(GenerationSettings.Builder builder, CallbackInfo ci) {
-        builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ORANGE_TREE);
-        builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, PEACH_TREE);
-        builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, LYCHEE_TREE);
-        builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, CHERRY_TREE);
+        builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, SPARSE_CHERRY_TREES);
+        builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, SPARSE_LYCHEE_TREES);
+        builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, SPARSE_ORANGE_TREES);
+        builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, SPARSE_PEACH_TREES);
     }
     @Inject(method = "addForestGrass(Lnet/minecraft/world/biome/GenerationSettings$Builder;)V", at = @At("TAIL"))
     private static void addForestGrass(GenerationSettings.Builder builder, CallbackInfo ci) {

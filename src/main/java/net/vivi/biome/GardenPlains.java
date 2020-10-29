@@ -8,6 +8,7 @@ import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.surfacebuilder.ConfiguredSurfaceBuilders;
 
 import static net.minecraft.world.gen.GenerationStep.*;
+import static net.minecraft.world.gen.feature.ConfiguredFeatures.*;
 import static net.vivi.init.ViviWorldGen.*;
 
 public class GardenPlains {
@@ -27,11 +28,18 @@ public class GardenPlains {
         DefaultBiomeFeatures.addSprings(generationSettings);
         DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
         generationSettings.feature(Feature.VEGETAL_DECORATION, DENSE_GARDEN_GRASS);
+        generationSettings.feature(Feature.VEGETAL_DECORATION, PATCH_LARGE_FERN);
+        generationSettings.feature(Feature.VEGETAL_DECORATION, PATCH_TALL_GRASS_2);
+        generationSettings.feature(Feature.VEGETAL_DECORATION, FLOWER_PLAIN_DECORATED);
+        generationSettings.feature(Feature.VEGETAL_DECORATION, RARE_CHERRY_TREES);
+        generationSettings.feature(Feature.VEGETAL_DECORATION, RARE_LYCHEE_TREES);
+        generationSettings.feature(Feature.VEGETAL_DECORATION, RARE_ORANGE_TREES);
+        generationSettings.feature(Feature.VEGETAL_DECORATION, RARE_PEACH_TREES);
         return new Biome.Builder()
                 .precipitation(Biome.Precipitation.RAIN)
                 .category(Biome.Category.PLAINS)
-                .depth(0f)
-                .scale(0.05f)
+                .depth(0.2f)
+                .scale(0.1f)
                 .temperature(0.8f)
                 .downfall(0.4f)
                 .effects((new BiomeEffects.Builder())
