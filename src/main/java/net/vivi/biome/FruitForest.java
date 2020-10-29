@@ -1,6 +1,5 @@
 package net.vivi.biome;
 
-import net.fabricmc.fabric.api.biome.v1.OverworldBiomes;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeEffects;
 import net.minecraft.world.biome.GenerationSettings;
@@ -26,10 +25,10 @@ public class FruitForest {
         DefaultBiomeFeatures.addDefaultDisks(generationSettings);
         DefaultBiomeFeatures.addSprings(generationSettings);
         DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
-        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.CHERRY_TREE);
-        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.ORANGE_TREE);
-        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.LYCHEE_TREE);
-        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.PEACH_TREE);
+        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.DENSE_CHERRY_TREES);
+        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.DENSE_ORANGE_TREES);
+        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.DENSE_LYCHEE_TREES);
+        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.DENSE_PEACH_TREES);
         return new Biome.Builder()
                 .precipitation(Biome.Precipitation.RAIN)
                 .category(Biome.Category.FOREST)

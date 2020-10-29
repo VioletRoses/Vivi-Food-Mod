@@ -1,9 +1,13 @@
 {
+  "biome.vivi.fruit_forest": "Fruit Forest",
+  "block.vivi.cherry_leaves": "Cherry Leaves",
   "block.vivi.coffee_crop": "Coffee Seeds",
   "block.vivi.corn_crop": "Corn Seeds",
   "block.vivi.garden_grass": "Garden Grass",
   "block.vivi.lettuce_crop": "Lettuce Seeds",
+  "block.vivi.lychee_leaves": "Lychee leaves",
   "block.vivi.mint_crop": "Mint Seeds",
+  "block.vivi.orange_leaves": "Orange leaves",
   "block.vivi.peach_leaves": "Peach Leaves",
   "block.vivi.peach_sapling": "Peach Sapling",
   "block.vivi.salt_ore": "Salt Ore",

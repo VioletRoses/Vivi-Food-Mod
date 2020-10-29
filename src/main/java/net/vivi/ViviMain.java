@@ -7,6 +7,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.vivi.init.*;
 
+import java.util.Random;
+
 public class ViviMain implements ModInitializer {
 
 	public static final ItemGroup VIVI_FOOD_GROUP = FabricItemGroupBuilder.build(new Identifier("vivi", "food"), () -> new ItemStack(ViviFoods.STRAWBERRY));
