@@ -39,7 +39,6 @@ public class ViviFoods {
     public static final Item STRAWBERRY_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
     public static final Item ORANGE_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
     public static final Item PEACH_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
-    public static final Item GRAPE_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
     public static final Item CHERRY_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
 
 
@@ -92,8 +91,6 @@ public class ViviFoods {
         //Jellies
         //TODO: Strawberry jelly texture
         register(ITEM, new Identifier("vivi", "strawberry_jelly"), STRAWBERRY_JELLY);
-        //TODO: Grape jelly texture
-        register(ITEM, new Identifier("vivi", "grape_jelly"), GRAPE_JELLY);
         //TODO: Orange jelly texture
         register(ITEM, new Identifier("vivi", "orange_jelly"), ORANGE_JELLY);
         //TODO: Peach jelly texture

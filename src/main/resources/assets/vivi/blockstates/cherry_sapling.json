@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "vivi:block/cherry_sapling"
+    },
+    "stage=1": {
+      "model": "vivi:block/cherry_sapling"
+    }
+  }
+}

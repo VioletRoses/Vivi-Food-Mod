@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "vivi:strawberry"
+      "item": "vivi:cherry"
     },
     {
       "item": "minecraft:honey_bottle"
     }
   ],
   "result": {
-    "item": "vivi:strawberry_jelly",
+    "item": "vivi:cherry_jelly",
     "count": 1
   }
 }

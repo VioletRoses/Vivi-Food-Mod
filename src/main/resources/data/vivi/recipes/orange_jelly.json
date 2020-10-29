@@ -2,11 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "vivi:peach"
+      "item": "vivi:orange"
+    },
+    {
+      "item": "minecraft:honey_bottle"
     }
   ],
   "result": {
-    "item": "vivi:peach_sapling",
+    "item": "vivi:orange_jelly",
     "count": 1
   }
 }
