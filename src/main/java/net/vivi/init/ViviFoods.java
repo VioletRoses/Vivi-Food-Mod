@@ -4,6 +4,9 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.recipe.Recipe;
+import net.minecraft.recipe.RecipeManager;
+import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.util.Identifier;
 import net.vivi.ViviMain;
 import net.vivi.item.DrinkItem;
@@ -14,7 +17,7 @@ public class ViviFoods {
 
     public static final FoodComponent CROP_FRUIT = new FoodComponent.Builder().hunger(3).saturationModifier(0.75f).snack().build();
     public static final FoodComponent TREE_FRUIT = new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).snack().build();
-    public static final FoodComponent JELLY = new FoodComponent.Builder().hunger(4).saturationModifier(0.75f).snack().build();
+    public static final FoodComponent JELLY = new FoodComponent.Builder().hunger(3).saturationModifier(0.75f).snack().build();
 
 
     public static final Item PICKLE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(4).saturationModifier(5.0f).snack().build()));
@@ -41,14 +44,21 @@ public class ViviFoods {
     public static final Item PEACH_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
     public static final Item CHERRY_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
 
-
     //Drinks
     public static final Item COFFEE = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 60 * 20), 1.0f).build()));
     public static final Item GREEN_TEA = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 5 * 20), 0.8f).build()));
     public static final Item MINT_TEA = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 8 * 20), 0.9f).build()));
     public static final Item PEACH_TEA = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(5).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 11 * 20), 1.0f).build()));
 
+    //Ingredients
+    public static final Item FLOUR = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP));
+    public static final Item DOUGH = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP));
+    public static final Item BREAD_SLICE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(1).saturationModifier(0.5f).snack().build()));
+    public static final Item TOAST = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.75f).build()));
+    public static final Item PEANUT_BUTTER = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
+
     //Meals
+    public static final Item PEANUT_BUTTER_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(11).saturationModifier(1.0f).build()));
     public static final Item SALAD = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(9).saturationModifier(1.0f).build()));
     public static final Item CHICKEN_SALAD = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(11).saturationModifier(1.0f).meat().build()));
     public static final Item TOFU_SALAD = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(11).saturationModifier(1.0f).build()));
@@ -108,7 +118,21 @@ public class ViviFoods {
         //TODO: Peach tea texture
         register(ITEM, new Identifier("vivi", "peach_tea"), PEACH_TEA);
 
+        //Ingredients
+        //TODO: Flour texture
+        register(ITEM, new Identifier("vivi", "flour"), FLOUR);
+        //TODO: Dough texture
+        register(ITEM, new Identifier("vivi", "dough"), DOUGH);
+        //TODO: Bread slice texture
+        register(ITEM, new Identifier("vivi", "bread_slice"), BREAD_SLICE);
+        //TODO: Toast texture
+        register(ITEM, new Identifier("vivi", "toast"), TOAST);
+        //TODO: Peanut butter texture
+        register(ITEM, new Identifier("vivi", "peanut_butter"), PEANUT_BUTTER);
+
         //Meals
+        //TODO: Peanut butter jelly sandwich texture
+        register(ITEM, new Identifier("vivi", "peanut_butter_jelly"), PEANUT_BUTTER_JELLY);
         //TODO: Salad texture
         register(ITEM, new Identifier("vivi", "salad"), SALAD);
         //TODO: Chicken salad texture

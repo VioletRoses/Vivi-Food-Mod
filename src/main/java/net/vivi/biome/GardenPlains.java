@@ -31,10 +31,7 @@ public class GardenPlains {
         generationSettings.feature(Feature.VEGETAL_DECORATION, PATCH_LARGE_FERN);
         generationSettings.feature(Feature.VEGETAL_DECORATION, PATCH_TALL_GRASS_2);
         generationSettings.feature(Feature.VEGETAL_DECORATION, FLOWER_PLAIN_DECORATED);
-        generationSettings.feature(Feature.VEGETAL_DECORATION, RARE_CHERRY_TREES);
-        generationSettings.feature(Feature.VEGETAL_DECORATION, RARE_LYCHEE_TREES);
-        generationSettings.feature(Feature.VEGETAL_DECORATION, RARE_ORANGE_TREES);
-        generationSettings.feature(Feature.VEGETAL_DECORATION, RARE_PEACH_TREES);
+        generationSettings.feature(Feature.VEGETAL_DECORATION, OAK);
         return new Biome.Builder()
                 .precipitation(Biome.Precipitation.RAIN)
                 .category(Biome.Category.PLAINS)
