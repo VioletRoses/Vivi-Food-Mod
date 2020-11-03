@@ -15,10 +15,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.vivi.ViviMain"
+      "net.vivi.food.ViviMain"
     ],
     "client": [
-      "net.vivi.ViviClient"
+      "net.vivi.food.ViviClient"
     ]
   },
 
