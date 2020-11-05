@@ -28,10 +28,10 @@ public class ViviBlocks {
     public static final Block CHERRY_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).hardness(0.2f).materialColor(MaterialColor.RED_TERRACOTTA).suffocates(ViviBlocks::never).blockVision(ViviBlocks::never).sounds(BlockSoundGroup.GRASS));
 
     //Saplings
-    public static final Block PEACH_SAPLING = new ViviSaplingBlock(new ViviSaplingGenerator(() -> ViviWorldGen.PEACH_TREE.config));
-    public static final Block ORANGE_SAPLING = new ViviSaplingBlock(new ViviSaplingGenerator(() -> ViviWorldGen.ORANGE_TREE.config));
-    public static final Block CHERRY_SAPLING = new ViviSaplingBlock(new ViviSaplingGenerator(() -> ViviWorldGen.CHERRY_TREE.config));
-    public static final Block LYCHEE_SAPLING = new ViviSaplingBlock(new ViviSaplingGenerator(() -> ViviWorldGen.LYCHEE_TREE.config));
+    public static final Block PEACH_SAPLING = new ViviSaplingBlock(new ViviSaplingGenerator(() -> ViviFeatures.PEACH_TREE.config));
+    public static final Block ORANGE_SAPLING = new ViviSaplingBlock(new ViviSaplingGenerator(() -> ViviFeatures.ORANGE_TREE.config));
+    public static final Block CHERRY_SAPLING = new ViviSaplingBlock(new ViviSaplingGenerator(() -> ViviFeatures.CHERRY_TREE.config));
+    public static final Block LYCHEE_SAPLING = new ViviSaplingBlock(new ViviSaplingGenerator(() -> ViviFeatures.LYCHEE_TREE.config));
 
     //Ores
     public static final Block SALT_ORE = new Block(FabricBlockSettings.of(Material.STONE).hardness(1.0f).requiresTool());

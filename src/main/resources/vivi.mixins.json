@@ -3,9 +3,7 @@
   "minVersion": "0.8",
   "package": "net.vivi.food.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-    "DefaultBiomeFeaturesMixin"
-  ],
+  "mixins": [],
   "client": [],
   "server": [],
   "injectors": {

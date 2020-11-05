@@ -3,12 +3,15 @@ package net.vivi.food;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.client.render.RenderLayer;
+
+import java.util.Arrays;
 
 import static net.vivi.food.init.ViviBlocks.*;
 import static net.vivi.food.init.ViviCrops.*;
@@ -49,18 +52,19 @@ public class ViviClient implements ClientModInitializer {
                 GRASS_ITEM_COLORS,
                 GARDEN_GRASS
         );
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), GARDEN_GRASS);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), TOMATO_CROP);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), LETTUCE_CROP);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), STRAWBERRY_CROP);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), CORN_CROP);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), COFFEE_CROP);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), MINT_CROP);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), TEA_CROP);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), SOYBEAN_CROP);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), PEACH_LEAVES);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), LYCHEE_LEAVES);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ORANGE_LEAVES);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), CHERRY_LEAVES);
+        for (Block block : Arrays.asList(GARDEN_GRASS,
+                TOMATO_CROP,
+                LETTUCE_CROP,
+                STRAWBERRY_CROP,
+                CORN_CROP,
+                COFFEE_CROP,
+                MINT_CROP,
+                TEA_CROP,
+                SOYBEAN_CROP,
+                PEACH_LEAVES,
+                LYCHEE_LEAVES,
+                ORANGE_LEAVES,
+                CHERRY_LEAVES))
+            BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), block);
     }
 }

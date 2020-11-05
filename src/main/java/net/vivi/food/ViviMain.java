@@ -14,15 +14,17 @@ public class ViviMain implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		System.out.println("Vivi's food mod is starting!");
-		//Adds crops/base foods
+		//Adds crops & base foods
 		ViviCrops.init();
-		//Adds meals/combined foods
+		//Adds meals & combined foods
 		ViviFoods.init();
 		//Adds tools
 		ViviTools.init();
 		//Adds blocks (salt, etc.)
 		ViviBlocks.init();
-		//Enables worldgen features
+		//Adds worldgen features
+		ViviFeatures.init();
+		//Enables worldgen features & biomes
 		ViviWorldGen.init();
 		//Adds items
 		ViviItems.init();

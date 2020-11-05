@@ -7,28 +7,31 @@ import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.surfacebuilder.ConfiguredSurfaceBuilders;
+import net.vivi.food.init.ViviFeatures;
 import net.vivi.food.init.ViviWorldGen;
+
+import static net.minecraft.world.gen.feature.DefaultBiomeFeatures.*;
 
 public class FruitForest {
     public static Biome create() {
         SpawnSettings.Builder spawnSettings = new SpawnSettings.Builder();
-        DefaultBiomeFeatures.addFarmAnimals(spawnSettings);
-        DefaultBiomeFeatures.addMonsters(spawnSettings, 95, 5, 100);
+        addFarmAnimals(spawnSettings);
+        addMonsters(spawnSettings, 95, 5, 100);
         GenerationSettings.Builder generationSettings = new GenerationSettings.Builder();
-        generationSettings.surfaceBuilder(ConfiguredSurfaceBuilders.GRASS);
-        DefaultBiomeFeatures.addDefaultUndergroundStructures(generationSettings);
-        DefaultBiomeFeatures.addLandCarvers(generationSettings);
-        DefaultBiomeFeatures.addDefaultLakes(generationSettings);
-        DefaultBiomeFeatures.addDungeons(generationSettings);
-        DefaultBiomeFeatures.addMineables(generationSettings);
-        DefaultBiomeFeatures.addDefaultOres(generationSettings);
-        DefaultBiomeFeatures.addDefaultDisks(generationSettings);
-        DefaultBiomeFeatures.addSprings(generationSettings);
-        DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
-        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.DENSE_CHERRY_TREES);
-        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.DENSE_ORANGE_TREES);
-        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.DENSE_LYCHEE_TREES);
-        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviWorldGen.DENSE_PEACH_TREES);
+        addDefaultUndergroundStructures(generationSettings);
+        addLandCarvers(generationSettings);
+        addDefaultLakes(generationSettings);
+        addDungeons(generationSettings);
+        addMineables(generationSettings);
+        addDefaultOres(generationSettings);
+        addDefaultDisks(generationSettings);
+        addSprings(generationSettings);
+        addFrozenTopLayer(generationSettings);
+        generationSettings.surfaceBuilder(ConfiguredSurfaceBuilders.GRASS)
+                .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_CHERRY_TREES)
+                .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_ORANGE_TREES)
+                .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_LYCHEE_TREES)
+                .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_PEACH_TREES);
         return new Biome.Builder()
                 .precipitation(Biome.Precipitation.RAIN)
                 .category(Biome.Category.FOREST)
