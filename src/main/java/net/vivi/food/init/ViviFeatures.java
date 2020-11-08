@@ -25,7 +25,6 @@ import static net.vivi.food.init.ViviBlocks.*;
 import static net.vivi.food.init.ViviDecorators.*;
 
 public class ViviFeatures {
-
     public static Set<Block> SOIL = new HashSet<>(Arrays.asList(Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL, Blocks.COARSE_DIRT));
     public static ConfiguredFeature<?, ?> ORE_SALT_OVERWORLD = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, SALT_ORE.getDefaultState(), 27)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 64)).spreadHorizontally().repeat(6));
 
@@ -83,6 +82,5 @@ public class ViviFeatures {
         register(CONFIGURED_FEATURE, new Identifier("vivi", "rare_lychee_trees"), RARE_LYCHEE_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "rare_peach_trees"), RARE_PEACH_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "ore_salt_overworld"), ORE_SALT_OVERWORLD);
-
     }
 }

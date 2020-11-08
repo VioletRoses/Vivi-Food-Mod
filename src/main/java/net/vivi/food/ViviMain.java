@@ -18,8 +18,6 @@ public class ViviMain implements ModInitializer {
 		ViviCrops.init();
 		//Adds meals & combined foods
 		ViviFoods.init();
-		//Adds tools
-		ViviTools.init();
 		//Adds blocks (salt, etc.)
 		ViviBlocks.init();
 		//Adds worldgen features
