@@ -14,6 +14,7 @@ import static net.minecraft.util.registry.BuiltinRegistries.*;
 import static net.minecraft.util.registry.Registry.*;
 import static net.minecraft.world.biome.Biome.Category.*;
 
+@SuppressWarnings( "deprecation" )
 public class ViviWorldGen {
 
     public static void init() {
@@ -22,6 +23,7 @@ public class ViviWorldGen {
         addFeature(categories(FOREST), GenerationStep.Feature.VEGETAL_DECORATION, RegistryKey.of(CONFIGURED_FEATURE_WORLDGEN, new Identifier("proton", "sparse_cherry_trees")));
         addFeature(categories(FOREST), GenerationStep.Feature.VEGETAL_DECORATION, RegistryKey.of(CONFIGURED_FEATURE_WORLDGEN, new Identifier("proton", "sparse_orange_trees")));
         addFeature(categories(FOREST), GenerationStep.Feature.VEGETAL_DECORATION, RegistryKey.of(CONFIGURED_FEATURE_WORLDGEN, new Identifier("proton", "sparse_lychee_trees")));
+        addFeature(categories(FOREST), GenerationStep.Feature.VEGETAL_DECORATION, RegistryKey.of(CONFIGURED_FEATURE_WORLDGEN, new Identifier("proton", "sparse_mango_trees")));
         addFeature(categories(FOREST), GenerationStep.Feature.VEGETAL_DECORATION, RegistryKey.of(CONFIGURED_FEATURE_WORLDGEN, new Identifier("proton", "dense_garden_grass")));
 
         addFeature(foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(CONFIGURED_FEATURE_WORLDGEN, new Identifier("proton", "ore_salt_overworld")));

@@ -41,21 +41,26 @@ public class ViviFeatures {
     public static ConfiguredFeature<TreeFeatureConfig, ?> ORANGE_TREE = createFruitTree(ORANGE_LEAVES);
     public static ConfiguredFeature<TreeFeatureConfig, ?> LYCHEE_TREE = createFruitTree(LYCHEE_LEAVES);
     public static ConfiguredFeature<TreeFeatureConfig, ?> CHERRY_TREE = createFruitTree(CHERRY_LEAVES);
+    public static ConfiguredFeature<TreeFeatureConfig, ?> MANGO_TREE = createFruitTree(MANGO_LEAVES);
+
 
     public static ConfiguredFeature<?, ?> DENSE_CHERRY_TREES = CHERRY_TREE.decorate(SQUARE_HEIGHTMAP).decorate(denseTrees);
     public static ConfiguredFeature<?, ?> DENSE_ORANGE_TREES = ORANGE_TREE.decorate(SQUARE_HEIGHTMAP).decorate(denseTrees);
     public static ConfiguredFeature<?, ?> DENSE_LYCHEE_TREES = LYCHEE_TREE.decorate(SQUARE_HEIGHTMAP).decorate(denseTrees);
     public static ConfiguredFeature<?, ?> DENSE_PEACH_TREES = PEACH_TREE.decorate(SQUARE_HEIGHTMAP).decorate(denseTrees);
+    public static ConfiguredFeature<?, ?> DENSE_MANGO_TREES = MANGO_TREE.decorate(SQUARE_HEIGHTMAP).decorate(denseTrees);
 
     public static ConfiguredFeature<?, ?> SPARSE_CHERRY_TREES = CHERRY_TREE.decorate(SQUARE_HEIGHTMAP).decorate(sparseTrees);
     public static ConfiguredFeature<?, ?> SPARSE_ORANGE_TREES = ORANGE_TREE.decorate(SQUARE_HEIGHTMAP).decorate(sparseTrees);
     public static ConfiguredFeature<?, ?> SPARSE_LYCHEE_TREES = LYCHEE_TREE.decorate(SQUARE_HEIGHTMAP).decorate(sparseTrees);
     public static ConfiguredFeature<?, ?> SPARSE_PEACH_TREES = PEACH_TREE.decorate(SQUARE_HEIGHTMAP).decorate(sparseTrees);
+    public static ConfiguredFeature<?, ?> SPARSE_MANGO_TREES = MANGO_TREE.decorate(SQUARE_HEIGHTMAP).decorate(sparseTrees);
 
     public static ConfiguredFeature<?, ?> RARE_CHERRY_TREES = CHERRY_TREE.decorate(SQUARE_HEIGHTMAP).decorate(rareTrees);
     public static ConfiguredFeature<?, ?> RARE_ORANGE_TREES = ORANGE_TREE.decorate(SQUARE_HEIGHTMAP).decorate(rareTrees);
     public static ConfiguredFeature<?, ?> RARE_LYCHEE_TREES = LYCHEE_TREE.decorate(SQUARE_HEIGHTMAP).decorate(rareTrees);
     public static ConfiguredFeature<?, ?> RARE_PEACH_TREES = PEACH_TREE.decorate(SQUARE_HEIGHTMAP).decorate(rareTrees);
+    public static ConfiguredFeature<?, ?> RARE_MANGO_TREES = MANGO_TREE.decorate(SQUARE_HEIGHTMAP).decorate(rareTrees);
 
     public static ConfiguredFeature<?, ?> SPARSE_GARDEN_GRASS = Feature.RANDOM_PATCH.configure(new RandomPatchFeatureConfig.Builder(new SimpleBlockStateProvider(ViviBlocks.GARDEN_GRASS.getDefaultState()), new SimpleBlockPlacer()).tries(14).whitelist(SOIL).cannotProject().build()).decorate(Decorator.HEIGHTMAP_WORLD_SURFACE.configure(NopeDecoratorConfig.DEFAULT));
     public static ConfiguredFeature<?, ?> DENSE_GARDEN_GRASS = Feature.RANDOM_PATCH.configure(new RandomPatchFeatureConfig.Builder(new SimpleBlockStateProvider(ViviBlocks.GARDEN_GRASS.getDefaultState()), new SimpleBlockPlacer()).tries(128).whitelist(SOIL).cannotProject().build()).decorate(Decorator.HEIGHTMAP_WORLD_SURFACE.configure(NopeDecoratorConfig.DEFAULT));
@@ -68,18 +73,22 @@ public class ViviFeatures {
         register(CONFIGURED_FEATURE, new Identifier("vivi", "orange_tree"), ORANGE_TREE);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "lychee_tree"), LYCHEE_TREE);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "cherry_tree"), CHERRY_TREE);
+        register(CONFIGURED_FEATURE, new Identifier("vivi", "mango_tree"), MANGO_TREE);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "dense_garden_grass"), DENSE_GARDEN_GRASS);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "dense_cherry_trees"), DENSE_CHERRY_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "dense_orange_trees"), DENSE_ORANGE_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "dense_lychee_trees"), DENSE_LYCHEE_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "dense_peach_trees"), DENSE_PEACH_TREES);
+        register(CONFIGURED_FEATURE, new Identifier("vivi", "dense_mango_trees"), DENSE_MANGO_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "sparse_cherry_trees"), SPARSE_CHERRY_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "sparse_orange_trees"), SPARSE_ORANGE_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "sparse_lychee_trees"), SPARSE_LYCHEE_TREES);
+        register(CONFIGURED_FEATURE, new Identifier("vivi", "sparse_mango_trees"), SPARSE_MANGO_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "sparse_peach_trees"), SPARSE_PEACH_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "rare_cherry_trees"), RARE_CHERRY_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "rare_orange_trees"), RARE_ORANGE_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "rare_lychee_trees"), RARE_LYCHEE_TREES);
+        register(CONFIGURED_FEATURE, new Identifier("vivi", "rare_mango_trees"), RARE_MANGO_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "rare_peach_trees"), RARE_PEACH_TREES);
         register(CONFIGURED_FEATURE, new Identifier("vivi", "ore_salt_overworld"), ORE_SALT_OVERWORLD);
     }

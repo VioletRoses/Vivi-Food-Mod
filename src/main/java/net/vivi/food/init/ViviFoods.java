@@ -29,17 +29,20 @@ public class ViviFoods {
     public static final Item TEA_LEAF = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP));
     public static final Item MINT_LEAF = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP));
 
+
     //Tree Fruits
     public static final Item CHERRY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(TREE_FRUIT));
     public static final Item LYCHEE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(TREE_FRUIT));
     public static final Item ORANGE = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(TREE_FRUIT));
     public static final Item PEACH = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(TREE_FRUIT));
+    public static final Item MANGO = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(TREE_FRUIT));
 
     //Jellies
     public static final Item STRAWBERRY_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
     public static final Item ORANGE_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
     public static final Item PEACH_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
     public static final Item CHERRY_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
+    public static final Item MANGO_JELLY = new Item(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(JELLY));
 
     //Drinks
     public static final Item COFFEE = new DrinkItem(new Item.Settings().group(ViviMain.VIVI_FOOD_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(1.0f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 60 * 20), 1.0f).build()));
@@ -94,6 +97,8 @@ public class ViviFoods {
         register(ITEM, new Identifier("vivi", "lychee"), LYCHEE);
         //TODO: Cherry texture
         register(ITEM, new Identifier("vivi", "cherry"), CHERRY);
+        //TODO: Mango texture
+        register(ITEM, new Identifier("vivi", "mango"), MANGO);
 
         //Jellies
         //TODO: Strawberry jelly texture
@@ -104,6 +109,8 @@ public class ViviFoods {
         register(ITEM, new Identifier("vivi", "peach_jelly"), PEACH_JELLY);
         //TODO: Cherry jelly texture
         register(ITEM, new Identifier("vivi", "cherry_jelly"), CHERRY_JELLY);
+        //TODO: Mango jelly texture
+        register(ITEM, new Identifier("vivi", "mango_jelly"), MANGO_JELLY);
 
         //Drinks
         //TODO: Coffee texture

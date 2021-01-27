@@ -5,10 +5,8 @@ import net.minecraft.world.biome.BiomeEffects;
 import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.surfacebuilder.ConfiguredSurfaceBuilders;
 import net.vivi.food.init.ViviFeatures;
-import net.vivi.food.init.ViviWorldGen;
 
 import static net.minecraft.world.gen.feature.DefaultBiomeFeatures.*;
 
@@ -31,7 +29,8 @@ public class FruitForest {
                 .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_CHERRY_TREES)
                 .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_ORANGE_TREES)
                 .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_LYCHEE_TREES)
-                .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_PEACH_TREES);
+                .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_PEACH_TREES)
+                .feature(GenerationStep.Feature.VEGETAL_DECORATION, ViviFeatures.DENSE_MANGO_TREES);
         return new Biome.Builder()
                 .precipitation(Biome.Precipitation.RAIN)
                 .category(Biome.Category.FOREST)
